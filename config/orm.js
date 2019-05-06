@@ -1,6 +1,10 @@
 // import connection.js
-var connection = require("./connection.js");
+const connection = require("./connection.js");
 
 
+let orm = {
 
+};
+
+modules.export = orm;
 
