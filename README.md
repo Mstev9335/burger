@@ -10,5 +10,8 @@ that burger to the right side of the page.  The app stores every burger wether d
 * Javascript
 * Express Node Framework
 * Path Node Framework
-* Handlebars.js
+* express-handlebars NPM package
 * MYSQL
+* MYSQL NPM package
+* Express
+* Node.js
