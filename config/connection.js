@@ -1,20 +1,23 @@
-// connection to mysql database
-const mysql = require("mysql");
+// Pull in required dependencies
+var mysql = require('mysql');
 
-// create the connection information for the sql database
-const connection = mysql.createConnection({
-    host: "localhost",
-  
-    // Your port; if not 3306
-    port: 3306,
-  
-    // Your username
-    user: "root",
-  
-    // Your password
-    password: "root",
-    database: "burgers_db"
-  });
+// Create the MySQL connection object
+var connection;
 
-//   export connection
-  module.exports = connection;
+if (process.env.JAWSDB_URL) {
+	// DB is JawsDB on Heroku
+	connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+	// DB is local on localhost
+	connection = mysql.createConnection({
+		port: 3306,
+		host: 'localhost',
+		user: 'root',
+		password: 'root',
+		database: 'burgers_db'
+	})
+};
+
+
+// Export connection for ORM use
+module.exports = connection;
