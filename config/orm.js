@@ -1,4 +1,4 @@
-// Import Node Dependencies
+// Require connection
 const connection = require('./connection.js');
 
 // Connect to MySQL database

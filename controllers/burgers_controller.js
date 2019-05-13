@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
 });
 
 
-// Index Page (render all burgers to DOM)
+// Index Page (render all burgers)
 router.get('/index', function (req, res) {
   burger.selectAll(function (data) {
     var hbsObject = { burgers: data };
@@ -30,7 +30,7 @@ router.post('/burger/create', function (req, res) {
 });
 
 
-// Devour a Burger
+// Eat a Burger
 router.post('/burger/eat/:id', function (req, res) {
   burger.updateOne(req.params.id, function () {
     res.redirect('/index');
