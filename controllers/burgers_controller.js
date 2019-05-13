@@ -1,10 +1,10 @@
 // Node Dependencies
-var express = require('express');
-var router = express.Router();
-var burger = require('../models/burger.js');
+const express = require('express');
+const router = express.Router();
+const burger = require('../models/burger.js');
 
 
-// Create routes
+// Routes
 // ----------------------------------------------------
 // Index Redirect
 router.get('/', function (req, res) {

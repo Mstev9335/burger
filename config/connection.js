@@ -1,5 +1,5 @@
 // Pull in required dependencies
-var mysql = require('mysql');
+const mysql = require('mysql');
 
 // Create the MySQL connection object
 var connection;
