@@ -1,11 +1,11 @@
 <div class="row">
   <center>
-    <!-- Ready to eat -->
+  
     <div class="col-md-6">
       <h4 class="red_font">Ready to eat</h4>
       <div id="ready_to_eat">
 
-        <!-- Dynamically Insert Ready Burgers Here -->
+      {{!-- Insert burgers --}}
         {{#each burgers}}
           {{#unless devoured}}
           <form action="burger/eat/{{id}}" method="POST">
@@ -22,12 +22,11 @@
       </div>
     </div>
 
-    <!-- Already eaten -->
     <div class="col-md-6">
       <h4 class="red_font">Already eaten</h4>
       <div id="already_eaten">
 
-        <!-- Eaten burgers are placed here -->
+       {{!-- Eaten burgers placed here --}}
         {{#each burgers}}
           {{#if this.devoured}}
             <div class="input-group">
