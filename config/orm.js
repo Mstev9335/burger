@@ -10,8 +10,8 @@ connection.connect(function (err) {
 	console.log('connected as id ' + connection.threadId);
 });
 
-// Methods for MySQL commands
-let orm = {
+// Orm
+var orm = {
 
 	// select all burgers
 	selectAll: function (callback) {
