@@ -2,9 +2,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+// Set heroku port
+var port = process.env.PORT || 3000;
 
 var app = express();
-//Serve static content for the app from the "public" directory in the application directory.
+// Set static directory
 app.use(express.static(process.cwd() + '/public'));
 
 // Parse application/x-www-form-urlencoded
@@ -21,7 +23,6 @@ var routes = require('./controllers/burgers_controller.js');
 
 app.use('/', routes);
 
-var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
   // Log (server-side) when our server has started
