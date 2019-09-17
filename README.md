@@ -14,4 +14,13 @@ This application is used to demonstrate the usage of handlebars in order to popu
 * Express
 * Node.js
 
+### App starts
+![start](/assets/images/burger1.png)
+
+### After adding another burger
+![add](/assets/images/burger2.png)
+
+### After eating this new burger
+![eat](/assets/images/burger3.png)
+
 ### Deployed on Heroku: [Eat-da-Burger](https://pacific-spire-19292.herokuapp.com/index)
